@@ -2,12 +2,6 @@
 
 A robust solution for extracting structured outlines (titles and headings) from PDF documents for the Adobe Hackathon Challenge 1A.
 
-Team Details:
-
-1. [Akash Tripathi](https://www.linkedin.com/in/akashtripathi122004/)
-2. [Arihant Yadav](https://www.linkedin.com/in/arihant-yadav-07a7a5289/)
-3. [Nilanjan Mitra](https://www.linkedin.com/in/nilanjanbmitra/)
-
 ## Approach
 
 1. **Text Extraction**
@@ -66,43 +60,6 @@ docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --networ
 ```bash
 # For Windows
 docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" --network none pdf-processor
-```
-
-## Structure of the Code
-
-```
-Adobe-1A/
-├── app/
-│   ├── input/         # Input PDF files
-│   └── output/        # JSON files provided as outputs.
-├── src/
-|   ├── compute_dominant_gaps.py
-│   ├── heading_extractor.py
-|   ├── heading_merger.py
-|   ├── heading_ranker.py
-|   ├── ocr_utils.py
-|   ├── parallel_heading_merger.py
-|   ├── parallel_worker.py
-│   └── main.py
-├── Dockerfile
-├── pyproject.toml
-├── uv.lock
-└── README.md
-```
-
-### Local Development
-
-You need to have the following installed:
-
-1. [uv](https://docs.astral.sh/uv/)
-2. [python](https://www.python.org/)
-3. [tesseract](https://github.com/tesseract-ocr/tesseract?tab=readme-ov-file#installing-tesseract)
-
-For installing dependencies and running the project:
-
-```bash
-uv run poe setup
-uv run poe start
 ```
 
 ## Performance Results
