@@ -1,6 +1,6 @@
 # PDF Outline Extractor
 
-A robust solution for extracting structured outlines (titles and headings) from PDF documents for the Adobe Hackathon Challenge 1A.
+A robust solution for extracting structured outlines (titles and headings) from PDF documents.
 
 ## Approach
 
