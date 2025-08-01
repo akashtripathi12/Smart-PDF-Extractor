@@ -1,0 +1,60 @@
+# Version control
+.git/
+.gitignore
+.gitmodules
+
+# Virtual environments (will be created fresh)
+.venv/
+venv/
+env/
+list/
+
+# Python cache (will be recreated)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# Environment files (keep .env.dist if it exists)
+.env
+.env.local
+.env.development
+.env.production
+
+# Documentation
+docs/
+*.md
+README.md
+
+# Output directory (will be mounted)
+sample_dataset/
+input/
+output/
